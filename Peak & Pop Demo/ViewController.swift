@@ -13,6 +13,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        if traitCollection.forceTouchCapability == UIForceTouchCapability.available {
+            
+            registerForPreviewing(with: self, sourceView: view)
+            
+            
+            
+        } else { //unavailibe
+            
+            print("Cant Even. use force touch, that is...")
+            
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,3 +36,25 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController: UIViewControllerPreviewingDelegate {
+    
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+        
+    
+        let peakViewController = storyboard?.instantiateViewController(withIdentifier: "peakViewController")
+        
+        return peakViewController
+        
+    
+    }
+    
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
+        
+        let popViewController = storyboard?.instantiateViewController(withIdentifier: "popViewController")
+        
+        show(popViewController!, sender: self)
+    }
+    
+        
+}
+    

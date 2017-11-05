@@ -12,6 +12,8 @@
 		FA6EBF921FAEAAF2009FB9BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6EBF901FAEAAF2009FB9BB /* Main.storyboard */; };
 		FA6EBF941FAEAAF2009FB9BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6EBF931FAEAAF2009FB9BB /* Assets.xcassets */; };
 		FA6EBF971FAEAAF2009FB9BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6EBF951FAEAAF2009FB9BB /* LaunchScreen.storyboard */; };
+		FA6EBF9F1FAEABA6009FB9BB /* PeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EBF9E1FAEABA6009FB9BB /* PeakViewController.swift */; };
+		FA6EBFA11FAEABC5009FB9BB /* PopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EBFA01FAEABC5009FB9BB /* PopViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FA6EBF931FAEAAF2009FB9BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA6EBF961FAEAAF2009FB9BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA6EBF981FAEAAF2009FB9BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA6EBF9E1FAEABA6009FB9BB /* PeakViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeakViewController.swift; sourceTree = "<group>"; };
+		FA6EBFA01FAEABC5009FB9BB /* PopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				FA6EBF8C1FAEAAF2009FB9BB /* AppDelegate.swift */,
 				FA6EBF8E1FAEAAF2009FB9BB /* ViewController.swift */,
 				FA6EBF901FAEAAF2009FB9BB /* Main.storyboard */,
+				FA6EBF9E1FAEABA6009FB9BB /* PeakViewController.swift */,
+				FA6EBFA01FAEABC5009FB9BB /* PopViewController.swift */,
 				FA6EBF931FAEAAF2009FB9BB /* Assets.xcassets */,
 				FA6EBF951FAEAAF2009FB9BB /* LaunchScreen.storyboard */,
 				FA6EBF981FAEAAF2009FB9BB /* Info.plist */,
@@ -136,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6EBFA11FAEABC5009FB9BB /* PopViewController.swift in Sources */,
+				FA6EBF9F1FAEABA6009FB9BB /* PeakViewController.swift in Sources */,
 				FA6EBF8F1FAEAAF2009FB9BB /* ViewController.swift in Sources */,
 				FA6EBF8D1FAEAAF2009FB9BB /* AppDelegate.swift in Sources */,
 			);
